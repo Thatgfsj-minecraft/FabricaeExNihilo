@@ -18,45 +18,21 @@
     "client": [
       "wraith.fabricaeexnihilo.client.FabricaeExNihiloClient"
     ],
-    "modmenu": [
-      "wraith.fabricaeexnihilo.client.config.ModmenuPlugin"
-    ],
     "fabricaeexnihilo:api": [
       "wraith.fabricaeexnihilo.compatibility.DefaultApiModule::INSTANCE",
       "wraith.fabricaeexnihilo.compatibility.TechRebornApiModule::INSTANCE",
       "wraith.fabricaeexnihilo.compatibility.IndustrialRevolutionApiModule::INSTANCE",
       "wraith.fabricaeexnihilo.compatibility.ModernIndustrializationApiModule::INSTANCE",
       "wraith.fabricaeexnihilo.compatibility.MythicMetalsApiModule::INSTANCE"
-    ],
-    "rei_client": [
-      "wraith.fabricaeexnihilo.compatibility.rei.PluginEntry"
-    ],
-    "emi": [
-      "wraith.fabricaeexnihilo.compatibility.emi.FENEmiPlugin"
-    ],
-    "jade": [
-      "wraith.fabricaeexnihilo.compatibility.jade.FENJadePlugin"
-    ],
-    "fabric-datagen": [
-      "wraith.fabricaeexnihilo.datagen.FENDatagen"
     ]
   },
   "mixins": [
     "fabricaeexnihilo.mixin.json"
   ],
-  "custom": {
-    "megane:modules": [
-      "wraith.fabricaeexnihilo.compatibility.megane.FENMeganeModule"
-    ],
-    "DISABLED(II doesn't work well with accessor mixins for the time being), loom:injected_interfaces": {
-      "net/minecraft/class_4915": ["wraith/fabricaeexnihilo/mixins/ItemModelGeneratorAccess"],
-      "net/minecraft/class_2203\u0024class_2209": ["wraith/fabricaeexnihilo/mixins/NbtPathAccess"]
-    }
-  },
   "depends": {
     "fabricloader": ">=0.15.10",
     "fabric-api": "*",
-    "minecraft": ">=1.21",
+    "minecraft": ">=1.21.1",
     "java": ">=21"
   }
 }

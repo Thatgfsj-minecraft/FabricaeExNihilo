@@ -30,7 +30,7 @@ public class BloodFluid extends AbstractFluid {
     }
 
     @Override
-    public int getFlowSpeed(WorldView world) {
+    public int getMaxFlowDistance(WorldView world) {
         return 3;
     }
 

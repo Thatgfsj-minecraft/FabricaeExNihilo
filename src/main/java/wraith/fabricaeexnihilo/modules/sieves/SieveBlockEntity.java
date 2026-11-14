@@ -206,6 +206,11 @@ public class SieveBlockEntity extends BaseBlockEntity {
         return mesh;
     }
 
+    public void setMesh(ItemStack mesh) {
+        this.mesh = mesh;
+        markDirty();
+    }
+
     public double getProgress() {
         return progress;
     }
